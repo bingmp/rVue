@@ -1,8 +1,19 @@
 <template>
-  <h1>APP</h1>
+  <div>
+    <router-view></router-view>
+  </div>
 </template>
 <script setup lang="ts">
-const a = 100
-print(a)
+import { onMounted } from 'vue'
+import { reqLogin } from './api/user'
+
+onMounted(() => {
+  reqLogin({ username: 'admin', password: '111111' })
+})
+</script>
+<script lang="ts">
+export default {
+  name: 'App',
+}
 </script>
 <style scoped></style>
