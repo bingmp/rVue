@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --open",
-    "build": "vue-tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint src",
     "fix": "eslint src --fix",
@@ -20,6 +20,7 @@
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
     "axios": "^1.6.8",
+    "echarts": "^5.5.0",
     "element-plus": "^2.6.1",
     "mock.js": "^0.2.0",
     "nprogress": "^0.2.0",
