@@ -13,6 +13,7 @@ import 'virtual:svg-icons-register'
 import gloablComponent from './components/index.ts'
 import router from './router'
 import pinia from './store'
+import 'default-passive-events'
 
 const app = createApp(App)
 app.use(ElementPlus)

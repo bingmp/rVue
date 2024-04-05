@@ -1,0 +1,50 @@
+[
+  {
+    "describe": "Gene expression",
+    "type": "Machlearn",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/expr.png",
+    "src": "https://db.chcmu.com.cn/idbview/machlearn/02_expr/"
+  },
+  {
+    "describe": "Gene heatmap",
+    "type": "Machlearn",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/heatmap.png",
+    "src": "https://db.chcmu.com.cn/idbview/machlearn/03_heatmap/"
+  },
+  {
+    "describe": "Gene pROC",
+    "type": "Machlearn",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/pROC.png",
+    "src": "https://db.chcmu.com.cn/idbview/machlearn/04_pROC/"
+  },
+  {
+    "describe": "Mutli-gene pROC ",
+    "type": "Machlearn",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/pROC_mutli.png",
+    "src": "https://db.chcmu.com.cn/idbview/machlearn/05_pROC_mutli/"
+  },
+  {
+    "describe": "Genes logistic",
+    "type": "Machlearn",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/logistic.png",
+    "src": "https://db.chcmu.com.cn/idbview/machlearn/06_logistic/"
+  },
+  {
+    "describe": "Dtree",
+    "type": "Machlearn",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/dtree.png",
+    "src": "https://db.chcmu.com.cn/idbview/machlearn/07_dtree/"
+  },
+  {
+    "describe": "RandomForest",
+    "type": "Machlearn",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/RF.png",
+    "src": "https://db.chcmu.com.cn/idbview/machlearn/08_RF/"
+  },
+  {
+    "describe": "SVM",
+    "type": "Machlearn",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/SVM.png",
+    "src": "https://db.chcmu.com.cn/idbview/machlearn/09_SVM/"
+  }
+]

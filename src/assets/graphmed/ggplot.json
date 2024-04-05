@@ -1,0 +1,56 @@
+[
+  {
+    "describe": "ggscatter",
+    "type": "ggplot",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/ggscatter.png",
+    "src": "https://db.chcmu.com.cn/idbview/ggplot/ggscatter/"
+  },
+  {
+    "describe": "ggviolin",
+    "type": "ggplot",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/ggviolin.png",
+    "src": "https://db.chcmu.com.cn/idbview/ggplot/ggviolin/"
+  },
+  {
+    "describe": "ggbarplot",
+    "type": "ggplot",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/ggbarplot.png",
+    "src": "https://db.chcmu.com.cn/idbview/ggplot/ggbarplot/"
+  },
+  {
+    "describe": "ggerrorbar",
+    "type": "ggplot",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/ggerrorbar.png",
+    "src": "https://db.chcmu.com.cn/idbview/ggplot/ggerrorbar/"
+  },
+  {
+    "describe": "ggdensity",
+    "type": "ggplot",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/ggdensity.png",
+    "src": "https://db.chcmu.com.cn/idbview/ggplot/ggdensity/"
+  },
+  {
+    "describe": "ggdotplot",
+    "type": "ggplot",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/ggdotplot.png",
+    "src": "https://db.chcmu.com.cn/idbview/ggplot/ggdotplot/"
+  },
+  {
+    "describe": "gghistogram",
+    "type": "ggplot",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/gghistogram.png",
+    "src": "https://db.chcmu.com.cn/idbview/ggplot/gghistogram/"
+  },
+  {
+    "describe": "ggmerge",
+    "type": "ggplot",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/ggmerge.png",
+    "src": "https://db.chcmu.com.cn/idbview/ggplot/ggmerge/"
+  },
+  {
+    "describe": "ggplot",
+    "type": "ggplot",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/ggplot.png",
+    "src": "https://db.chcmu.com.cn/idbview/ggplot/ggplot/"
+  }
+]

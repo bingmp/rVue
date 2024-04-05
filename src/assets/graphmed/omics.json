@@ -1,0 +1,56 @@
+[
+  {
+    "describe": "Limma",
+    "type": "omics",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/limma_pca.png",
+    "src": "https://db.chcmu.com.cn/idbview/omics/limma/"
+  },
+  {
+    "describe": "DEseq2",
+    "type": "omics",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/deseq2_volcano.png",
+    "src": "https://db.chcmu.com.cn/idbview/omics/deseq2/"
+  },
+  {
+    "describe": "Ggene expression",
+    "type": "omics",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/expr.png",
+    "src": "https://db.chcmu.com.cn/idbview/omics/expr/"
+  },
+  {
+    "describe": "PCA",
+    "type": "omics",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/pca.png",
+    "src": "https://db.chcmu.com.cn/idbview/omics/pca/"
+  },
+  {
+    "describe": "Heatmap",
+    "type": "omics",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/heatmap.png",
+    "src": "https://db.chcmu.com.cn/idbview/omics/heatmap/"
+  },
+  {
+    "describe": "volcano",
+    "type": "omics",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/volcano.png",
+    "src": "https://db.chcmu.com.cn/idbview/omics/volcano/"
+  },
+  {
+    "describe": "Pathway bubble",
+    "type": "omics",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/pathwaybubble.png",
+    "src": "https://db.chcmu.com.cn/idbview/omics/pathwaybubble/"
+  },
+  {
+    "describe": "GeneName conversion",
+    "type": "omics",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/geneID.png",
+    "src": "https://db.chcmu.com.cn/idbview/omics/geneID/"
+  },
+  {
+    "describe": "Gene deduplication",
+    "type": "omics",
+    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/reps.png",
+    "src": "https://db.chcmu.com.cn/idbview/omics/reps/"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "map",
+    "describe": "China map",
+    "type": "clinic",
+    "img": "https://stu.chcmu.asia/wp-content/uploads/2023/08/ChinaMap.png",
+    "src": "https://db.chcmu.com.cn/idbview/clinic/map/",
+    "link": "/if"
+  },
+  {
+    "id": "provincemap",
+    "describe": "Province map",
+    "type": "clinic",
+    "img": "https://stu.chcmu.asia/wp-content/uploads/2023/08/ChinaMap.png",
+    "src": "https://db.chcmu.com.cn/idbview/clinic/provincemap/",
+    "link": "/if"
+  },
+  {
+    "id": "worldmap",
+    "describe": "World map",
+    "type": "clinic",
+    "img": "https://stu.chcmu.asia/wp-content/uploads/2023/08/ChinaMap.png",
+    "src": "https://db.chcmu.com.cn/idbview/clinic/worldmap/",
+    "link": "/if"
+  },
+  {
+    "id": "proc",
+    "describe": "pROC",
+    "type": "clinic",
+    "img": "https://stu.chcmu.asia/wp-content/uploads/2023/08/ChinaMap.png",
+    "src": "https://db.chcmu.com.cn/idbview/clinic/proc/",
+    "link": "/if"
+  }
+]
