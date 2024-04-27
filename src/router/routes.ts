@@ -68,25 +68,25 @@ export const constantRoute = [
       {
         path: '/clinic/atelectasis',
         name: 'Atelectasis',
-        component: () => import('@/views/echarts/Atelectasis.vue'),
+        component: () => import('@/views/ClinicData/Atelectasis.vue'),
         meta: { title: 'Atelectasis', icon: 'Picture', svg: 'lungs' },
       },
       {
         path: '/clinic/mycoplasma',
         name: 'Mycoplasma',
-        component: () => import('@/views/echarts/MycoplasmaChart.vue'),
+        component: () => import('@/views/ClinicData/MycoplasmaChart.vue'),
         meta: { title: 'Mycoplasma', icon: 'Picture', svg: 'lungs' },
       },
       {
         path: '/clinic/covid19',
         name: 'covid19',
-        component: () => import('@/views/Shinytools/Covid19.vue'),
+        component: () => import('@/views/ClinicData/Covid19.vue'),
         meta: { title: 'Covid-19', icon: 'Picture', svg: 'virus' },
       },
       {
         path: '/clinic/who',
         name: 'who',
-        component: () => import('@/views/Shinytools/WHOMortalityDatabase.vue'),
+        component: () => import('@/views/ClinicData/WHOMortalityDatabase.vue'),
         meta: {
           title: 'WHO Data',
           icon: 'Picture',
@@ -172,6 +172,38 @@ export const constantRoute = [
   //   },
   // },
   {
+    path: '/scrna',
+    name: 'scrna',
+    component: Layout,
+    redirect: '/scrna/seuratv3',
+    meta: {
+      hidden: false,
+      title: 'scRNA',
+      icon: 'DataAnalysis',
+      svg: 'scRNA',
+    },
+    children: [
+      {
+        path: '/scrna/azimuth',
+        name: 'Azimuth',
+        component: () => import('@/views/scRNA/Azimuth.vue'),
+        meta: { title: 'HLCA', icon: 'Picture', svg: 'cell' },
+      },
+      {
+        path: '/scrna/lca',
+        name: 'lca',
+        component: () => import('@/views/scRNA/index.vue'),
+        meta: { title: 'LCA', icon: 'Picture', svg: 'cell' },
+      },
+      {
+        path: '/scrna/seuratv3',
+        name: 'seuratv3',
+        component: () => import('@/views/scRNA/seuratv3.vue'),
+        meta: { title: 'Seuratv3', icon: 'Picture', svg: 'cell' },
+      },
+    ],
+  },
+  {
     path: '/echarts',
     name: 'Echarts',
     component: Layout,
@@ -198,19 +230,6 @@ export const constantRoute = [
     ],
   },
   {
-    path: '/scrna',
-    component: Layout,
-    redirect: '/scrna/seuratv3',
-    children: [
-      {
-        path: '/scrna/seuratv3',
-        name: 'seuratv3',
-        component: () => import('@/views/Shinytools/scRNA.vue'),
-        meta: { title: 'scRNA', icon: 'Picture', svg: 'cell' },
-      },
-    ],
-  },
-  {
     path: '/air',
     name: 'Air',
     component: Layout,
@@ -224,18 +243,18 @@ export const constantRoute = [
       },
     ],
   },
-  // {
-  //   path: '/lab',
-  //   name: 'lab',
-  //   component: Layout,
-  //   redirect: '/lab/phone',
-  //   children: [
-  //     {
-  //       path: '/lab/phone',
-  //       name: 'phone',
-  //       component: () => import('@/views/Shinytools/phone.vue'),
-  //       meta: { title: 'phone numbers', icon: 'Picture', svg: 'phone' },
-  //     },
-  //   ],
-  // },
+  {
+    path: '/lab',
+    name: 'lab',
+    component: Layout,
+    redirect: '/lab/phone',
+    children: [
+      {
+        path: '/lab/phone',
+        name: 'phone',
+        component: () => import('@/views/Shinytools/phone.vue'),
+        meta: { title: 'phone numbers', icon: 'Picture', svg: 'phone' },
+      },
+    ],
+  },
 ]

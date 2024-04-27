@@ -14,13 +14,13 @@
         :data="tableData"
         tooltip-effect="dark"
         stripe
-        style="width: 100%; height: 200px"
+        style="width: 100%; height: 800px"
       >
         <!-- <el-table-column type="selection" width="45"></el-table-column>
         <el-table-column label="序号" type="index" width="65"></el-table-column> -->
         <!-- <el-table-column prop="gse" label="gse" width="100"></el-table-column> -->
         <el-table-column prop="gse" label="gse" width="100">
-          <template slot-scope="scope">
+          <template v-slot="scope">
             <a
               :href="scope.row.url"
               target="_blank"
@@ -41,7 +41,7 @@
         <el-table-column
           prop="diease"
           label="diease"
-          width="80"
+          width="90"
           :filters="dieaseSelect"
           :filter-method="filterHandler"
           :filter-multiple="false"
@@ -58,12 +58,12 @@
         <el-table-column
           prop="method"
           label="method"
-          width="90"
+          width="100"
           :filters="methodSelect"
           :filter-method="filterHandler"
           :filter-multiple="false"
         />
-        <el-table-column prop="size" label="size" width="50" />
+        <el-table-column prop="size" label="size" width="60" />
         <el-table-column prop="analysis" label="analysis" width="150" />
         <el-table-column prop="describe" label="describe" />
       </el-table>
@@ -115,7 +115,11 @@ export default {
     },
   },
   methods: {
-    filterHandler(value, row, column) {
+    filterHandler(
+      value: string,
+      row: { [x: string]: string },
+      column: { [x: string]: string },
+    ) {
       const property = column['property']
       return row[property] === value
     },

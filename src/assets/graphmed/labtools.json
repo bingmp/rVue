@@ -2,19 +2,19 @@
   {
     "describe": "Elisa analysis",
     "type": "labtools",
-    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/elisa.png",
-    "src": "https://db.chcmu.com.cn/idbview/labtools/elisa/"
+    "img": "/images/graphmed/lab/elisa.png",
+    "src": "https://hiplotdev.hiplot.com.cn/idbview/labtools/elisa/"
   },
   {
     "describe": "Q-PCR analysis",
     "type": "labtools",
-    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/qpcr.png",
-    "src": "https://db.chcmu.com.cn/idbview/labtools/qpcr/"
+    "img": "/images/graphmed/lab/qpcr.png",
+    "src": "https://hiplotdev.hiplot.com.cn/idbview/labtools/qpcr/"
   },
   {
     "describe": "Lung function",
     "type": "labtools",
-    "img": "https://chcmu.com.cn/wp-content/uploads/2024/03/lung.png",
-    "src": "https://db.chcmu.com.cn/idbview/labtools/lung/"
+    "img": "/images/graphmed/lab/lung.png",
+    "src": "https://hiplotdev.hiplot.com.cn/idbview/labtools/lung/"
   }
 ]

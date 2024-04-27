@@ -17,7 +17,7 @@
     </el-tab-pane>
     <el-tab-pane label="Data" name="id2">
       <iframe
-        src="https://db.chcmu.com.cn/idbview/dataclinic/MMP/"
+        src="https://hiplotdev.hiplot.com.cn/idbview/dataclinic/MMP/"
         allowfullscreen="true"
         webkitallowfullscreen="true"
         mozallowfullscreen="true"

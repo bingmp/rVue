@@ -1,0 +1,38 @@
+[
+  {
+    "describe": "DEseq2: data DEG analysis",
+    "type": "RNAseq",
+    "img": "/images/rnaseq/deseq2/deseq2.png",
+    "src": "https://hiplotdev.hiplot.com.cn/idbview/rnaseq/DEseq2/"
+  },
+  {
+    "describe": "KEGG",
+    "type": "Enrichment",
+    "img": "/images/rnaseq/deseq2/kegg.png",
+    "src": "https://hiplotdev.hiplot.com.cn/idbview/enrichment/kegg/"
+  },
+  {
+    "describe": "gseakegg",
+    "type": "Enrichment",
+    "img": "/images/rnaseq/deseq2/gseakegg.png",
+    "src": "https://hiplotdev.hiplot.com.cn/idbview/enrichment/gseakegg/"
+  },
+  {
+    "describe": "go",
+    "type": "Enrichment",
+    "img": "/images/rnaseq/deseq2/go.png",
+    "src": "https://hiplotdev.hiplot.com.cn/idbview/enrichment/go/"
+  },
+  {
+    "describe": "gseago",
+    "type": "Enrichment",
+    "img": "/images/rnaseq/deseq2/gseago.png",
+    "src": "https://hiplotdev.hiplot.com.cn/idbview/enrichment/gseago/"
+  },
+  {
+    "describe": "ora",
+    "type": "Enrichment",
+    "img": "/images/rnaseq/deseq2/ora.png",
+    "src": "https://hiplotdev.hiplot.com.cn/idbview/enrichment/ora/"
+  }
+]

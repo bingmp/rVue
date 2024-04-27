@@ -1,13 +1,8 @@
 <template>
   <!-- v-for to show images -->
   <div class="volume-wrapper">
-    <div
-      class="volume-item"
-      v-for="item in tools"
-      :key="item.id"
-      @click="showTools(item.src)"
-    >
-      <el-card style="text-align: center">
+    <div class="volume-item" v-for="(item, index) in tools" :key="index">
+      <el-card style="text-align: center" @click="showTools(item.src)">
         <template #header>
           {{ item.describe }}
         </template>
@@ -29,7 +24,7 @@ let $router = useRouter()
 //获取路由对向
 let $route = useRoute()
 
-const showTools = async (src) => {
+const showTools = async (src: string) => {
   await shinyStore.Tools(src)
   //跳转到登录页面
   $router.push({ path: '/shiny/tools', query: { redirect: $route.path } })

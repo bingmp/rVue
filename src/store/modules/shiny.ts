@@ -12,7 +12,7 @@ const useShinyStore = defineStore('shiny', {
   actions: {
     Tools(src: string) {
       this.id = 'map'
-      this.src = src // 'https://db.chcmu.com.cn/idbview/clinic/map/'
+      this.src = src // 'https://hiplotdev.hiplot.com.cn/idbview/clinic/map/'
       this.link = '/if'
     },
   },

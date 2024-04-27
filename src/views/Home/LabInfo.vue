@@ -15,14 +15,8 @@
       诊断、治疗、研究与培训中心。
     </p>
     <div style="text-align: center">
-      <img
-        src="https://chcmu.com.cn/wp-content/uploads/2024/02/lab.jpg"
-        height="200px"
-      />
-      <img
-        src="https://chcmu.com.cn/wp-content/uploads/2024/02/chcmu.jpg"
-        height="200px"
-      />
+      <img src="/images/labinfo/lab.jpg" height="200px" />
+      <img src="/images/labinfo/chcmu.jpg" height="200px" />
     </div>
     <h3>【重庆医科大学附属儿童医院介绍】</h3>
     <p>

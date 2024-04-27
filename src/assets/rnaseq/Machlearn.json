@@ -1,0 +1,50 @@
+[
+  {
+    "describe": "Gene expression",
+    "type": "Machlearn",
+    "img": "/images/rnaseq/machlearn/expr.png",
+    "src": "https://hiplotdev.hiplot.com.cn/idbview/machlearn/02_expr/"
+  },
+  {
+    "describe": "Gene heatmap",
+    "type": "Machlearn",
+    "img": "/images/rnaseq/machlearn/heatmap.png",
+    "src": "https://hiplotdev.hiplot.com.cn/idbview/machlearn/03_heatmap/"
+  },
+  {
+    "describe": "Gene pROC",
+    "type": "Machlearn",
+    "img": "/images/rnaseq/machlearn/pROC.png",
+    "src": "https://hiplotdev.hiplot.com.cn/idbview/machlearn/04_pROC/"
+  },
+  {
+    "describe": "Mutli-gene pROC ",
+    "type": "Machlearn",
+    "img": "/images/rnaseq/machlearn/pROC_mutli.png",
+    "src": "https://hiplotdev.hiplot.com.cn/idbview/machlearn/05_pROC_mutli/"
+  },
+  {
+    "describe": "Genes logistic",
+    "type": "Machlearn",
+    "img": "/images/rnaseq/machlearn/logistic.png",
+    "src": "https://hiplotdev.hiplot.com.cn/idbview/machlearn/06_logistic/"
+  },
+  {
+    "describe": "Dtree",
+    "type": "Machlearn",
+    "img": "/images/rnaseq/machlearn/dtree.png",
+    "src": "https://hiplotdev.hiplot.com.cn/idbview/machlearn/07_dtree/"
+  },
+  {
+    "describe": "RandomForest",
+    "type": "Machlearn",
+    "img": "/images/rnaseq/machlearn/RF.png",
+    "src": "https://hiplotdev.hiplot.com.cn/idbview/machlearn/08_RF/"
+  },
+  {
+    "describe": "SVM",
+    "type": "Machlearn",
+    "img": "/images/rnaseq/machlearn/SVM.png",
+    "src": "https://hiplotdev.hiplot.com.cn/idbview/machlearn/09_SVM/"
+  }
+]

@@ -2,7 +2,7 @@
   <el-tabs v-model="activeName" type="card" @tab-click="handleClick">
     <el-tab-pane label="Data select" name="id1">
       <iframe
-        src="https://db.chcmu.com.cn/idbview/machlearn/01_dataset/"
+        src="https://hiplotdev.hiplot.com.cn/idbview/machlearn/01_dataset/"
         allowfullscreen="true"
         webkitallowfullscreen="true"
         mozallowfullscreen="true"
@@ -32,7 +32,7 @@
 
 <script setup lang="ts">
 import { useRouter, useRoute } from 'vue-router'
-import tools from '@/assets/graphmed/Machlearn.json'
+import tools from '@/assets/rnaseq/Machlearn.json'
 import useShinyStore from '@/store/modules/shiny'
 import { ref } from 'vue'
 

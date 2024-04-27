@@ -29,6 +29,13 @@
           All rights reserved
           <a
             style="color: #20a0ff"
+            href="https://github.com/PengBingming"
+            target="_blank"
+          >
+            GitHub
+          </a>
+          <a
+            style="color: #20a0ff"
             href="https://gitee.com/bingmp"
             target="_blank"
           >

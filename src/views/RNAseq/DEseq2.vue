@@ -2,7 +2,7 @@
   <el-tabs v-model="activeName" type="card">
     <el-tab-pane label="Data select" name="id1">
       <iframe
-        src="https://db.chcmu.com.cn/idbview/rnaseq/01_dataselect_DEseq2/"
+        src="https://hiplotdev.hiplot.com.cn/idbview/rnaseq/01_dataselect_DEseq2/"
         allowfullscreen="true"
         webkitallowfullscreen="true"
         mozallowfullscreen="true"
@@ -31,7 +31,7 @@
 </template>
 <script setup lang="ts">
 import { useRouter, useRoute } from 'vue-router'
-import tools from '@/assets/graphmed/DEseq2.json'
+import tools from '@/assets/rnaseq/DEseq2.json'
 import useShinyStore from '@/store/modules/shiny'
 import { ref } from 'vue'
 

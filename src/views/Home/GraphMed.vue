@@ -35,18 +35,20 @@
     </span>
     <div style="display: flex">
       <span style="width: 50%">
-        <img
-          src="https://chcmu.com.cn/wp-content/uploads/2024/03/tools.jpg"
-          alt="tools"
-          style="width: 100%"
-        />
+        <img src="/images/graphmed/tools.jpg" alt="tools" style="width: 100%" />
       </span>
 
       <span style="width: 50%">
         <br />
-        <a href="https://gitee.com/bingmp/" target="_blank">
-          <h4>Gitee</h4>
-        </a>
+        <div style="display: flex">
+          <a href="https://github.com/PengBingming" target="_blank">
+            <h4>Github</h4>
+          </a>
+          &nbsp;| &nbsp;
+          <a href="https://gitee.com/bingmp" target="_blank">
+            <h4>Gitee</h4>
+          </a>
+        </div>
         <br />
         <p>
           For RNA-seq and Enrichment, this web may not run successfully due to

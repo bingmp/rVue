@@ -3,8 +3,8 @@
   <div class="volume-wrapper">
     <div
       class="volume-item"
-      v-for="item in tools"
-      :key="item.id"
+      v-for="(item, index) in tools"
+      :key="index"
       @click="showTools(item.src)"
     >
       <el-card style="text-align: center">

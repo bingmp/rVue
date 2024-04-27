@@ -3,7 +3,7 @@ function createUserList() {
   return [
     {
       userId: 1,
-      avatar: 'https://chcmu.com.cn/wp-content/uploads/2024/02/doupi.jpg',
+      avatar: '/images/avatar/doupi.jpg',
       username: 'Bingm',
       password: '123456',
       desc: 'Bingm',
@@ -14,7 +14,7 @@ function createUserList() {
     },
     {
       userId: 2,
-      avatar: 'https://chcmu.com.cn/wp-content/uploads/2024/02/doupi.jpg',
+      avatar: '/images/avatar/doupi.jpg',
       username: 'LuoTT',
       password: '123456',
       desc: 'LuoTT',
@@ -25,7 +25,7 @@ function createUserList() {
     },
     {
       userId: 3,
-      avatar: 'https://chcmu.com.cn/wp-content/uploads/2024/03/lung.gif',
+      avatar: '/images/avatar/lung.gif',
       username: 'Admin',
       password: '123456',
       desc: 'Admin',
@@ -36,8 +36,7 @@ function createUserList() {
     },
     {
       userId: 4,
-      avatar:
-        'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
+      avatar: '/images/avatar/avatar-music.gif',
       username: 'System',
       password: '123456',
       desc: 'System admin',
