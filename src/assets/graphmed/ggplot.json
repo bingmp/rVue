@@ -3,54 +3,54 @@
     "describe": "ggscatter",
     "type": "ggplot",
     "img": "/images/graphmed/ggplot2/ggscatter.png",
-    "src": "https://hiplotdev.hiplot.com.cn/idbview/ggplot/ggscatter/"
+    "src": "https://db.chcmu.com.cn/idbview/ggplot/ggscatter/"
   },
   {
     "describe": "ggviolin",
     "type": "ggplot",
     "img": "/images/graphmed/ggplot2/ggviolin.png",
-    "src": "https://hiplotdev.hiplot.com.cn/idbview/ggplot/ggviolin/"
+    "src": "https://db.chcmu.com.cn/idbview/ggplot/ggviolin/"
   },
   {
     "describe": "ggbarplot",
     "type": "ggplot",
     "img": "/images/graphmed/ggplot2/ggbarplot.png",
-    "src": "https://hiplotdev.hiplot.com.cn/idbview/ggplot/ggbarplot/"
+    "src": "https://db.chcmu.com.cn/idbview/ggplot/ggbarplot/"
   },
   {
     "describe": "ggerrorbar",
     "type": "ggplot",
     "img": "/images/graphmed/ggplot2/ggerrorbar.png",
-    "src": "https://hiplotdev.hiplot.com.cn/idbview/ggplot/ggerrorbar/"
+    "src": "https://db.chcmu.com.cn/idbview/ggplot/ggerrorbar/"
   },
   {
     "describe": "ggdensity",
     "type": "ggplot",
     "img": "/images/graphmed/ggplot2/ggdensity.png",
-    "src": "https://hiplotdev.hiplot.com.cn/idbview/ggplot/ggdensity/"
+    "src": "https://db.chcmu.com.cn/idbview/ggplot/ggdensity/"
   },
   {
     "describe": "ggdotplot",
     "type": "ggplot",
     "img": "/images/graphmed/ggplot2/ggdotplot.png",
-    "src": "https://hiplotdev.hiplot.com.cn/idbview/ggplot/ggdotplot/"
+    "src": "https://db.chcmu.com.cn/idbview/ggplot/ggdotplot/"
   },
   {
     "describe": "gghistogram",
     "type": "ggplot",
     "img": "/images/graphmed/ggplot2/gghistogram.png",
-    "src": "https://hiplotdev.hiplot.com.cn/idbview/ggplot/gghistogram/"
+    "src": "https://db.chcmu.com.cn/idbview/ggplot/gghistogram/"
   },
   {
     "describe": "ggmerge",
     "type": "ggplot",
     "img": "/images/graphmed/ggplot2/ggmerge.png",
-    "src": "https://hiplotdev.hiplot.com.cn/idbview/ggplot/ggmerge/"
+    "src": "https://db.chcmu.com.cn/idbview/ggplot/ggmerge/"
   },
   {
     "describe": "ggplot",
     "type": "ggplot",
     "img": "/images/graphmed/ggplot2/ggplot.png",
-    "src": "https://hiplotdev.hiplot.com.cn/idbview/ggplot/ggplot/"
+    "src": "https://db.chcmu.com.cn/idbview/ggplot/ggplot/"
   }
 ]

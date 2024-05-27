@@ -243,18 +243,30 @@ export const constantRoute = [
       },
     ],
   },
-  {
-    path: '/lab',
-    name: 'lab',
-    component: Layout,
-    redirect: '/lab/phone',
-    children: [
-      {
-        path: '/lab/phone',
-        name: 'phone',
-        component: () => import('@/views/Shinytools/phone.vue'),
-        meta: { title: 'phone numbers', icon: 'Picture', svg: 'phone' },
-      },
-    ],
-  },
+  // {
+  //   path: '/lab',
+  //   name: 'lab',
+  //   component: Layout,
+  //   redirect: '/lab/phone',
+  //   meta: {
+  //     hidden: false,
+  //     title: 'lab',
+  //     icon: 'Picture',
+  //     svg: 'weather',
+  //   },
+  //   children: [
+  //     {
+  //       path: '/lab/phone',
+  //       name: 'phone',
+  //       component: () => import('@/views/Shinytools/phone.vue'),
+  //       meta: { title: 'phone numbers', icon: 'Picture', svg: 'phone' },
+  //     },
+  //     {
+  //       path: '/lab/plot',
+  //       name: 'plot',
+  //       component: () => import('@/views/echarts/plot.vue'),
+  //       meta: { title: 'Plot', icon: 'Picture', svg: 'weather' },
+  //     },
+  //   ],
+  // },
 ]

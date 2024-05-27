@@ -4,8 +4,12 @@
     "value": "vst"
   },
   {
-    "text": "limma",
-    "value": "limma"
+    "text": "quantile",
+    "value": "quantile"
+  },
+  {
+    "text": "other",
+    "value": "other"
   },
   {
     "text": "NULL",

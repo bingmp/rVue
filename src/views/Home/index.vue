@@ -30,8 +30,9 @@
               <ul>
                 <li>Omics:</li>
                 <p>
-                  1679 RNA-seq sequenced samples from children with Asthma, BPD,
-                  and respiratory syncytial virus (RSV);
+                  2576 RNA-seq sequenced samples for Asthma, bronchopulmonary
+                  dysplasia (BPD), and respiratory syncytial virus (RSV) and
+                  chronic obstructive pulmonary disease (COPD).
                 </p>
                 <li>Clinic:</li>
                 <p>123 million Covid-19;</p>

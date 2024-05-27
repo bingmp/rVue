@@ -3,36 +3,36 @@
     "describe": "Limma: data DEG analysis",
     "type": "RNAseq",
     "img": "/images/rnaseq/limma/limma.png",
-    "src": "https://hiplotdev.hiplot.com.cn/idbview/rnaseq/limma/"
+    "src": "https://db.chcmu.com.cn/idbview/rnaseq/limma/"
   },
   {
     "describe": "KEGG",
     "type": "Enrichment",
     "img": "/images/rnaseq/limma/kegg.png",
-    "src": "https://hiplotdev.hiplot.com.cn/idbview/enrichment/kegg/"
+    "src": "https://db.chcmu.com.cn/idbview/enrichment/kegg/"
   },
   {
     "describe": "gseakegg",
     "type": "Enrichment",
     "img": "/images/rnaseq/limma/gseakegg.png",
-    "src": "https://hiplotdev.hiplot.com.cn/idbview/enrichment/gseakegg/"
+    "src": "https://db.chcmu.com.cn/idbview/enrichment/gseakegg/"
   },
   {
     "describe": "go",
     "type": "Enrichment",
     "img": "/images/rnaseq/limma/go.png",
-    "src": "https://hiplotdev.hiplot.com.cn/idbview/enrichment/go/"
+    "src": "https://db.chcmu.com.cn/idbview/enrichment/go/"
   },
   {
     "describe": "gseago",
     "type": "Enrichment",
     "img": "/images/rnaseq/limma/gseago.png",
-    "src": "https://hiplotdev.hiplot.com.cn/idbview/enrichment/gseago/"
+    "src": "https://db.chcmu.com.cn/idbview/enrichment/gseago/"
   },
   {
     "describe": "ora",
     "type": "Enrichment",
     "img": "/images/rnaseq/limma/ora.png",
-    "src": "https://hiplotdev.hiplot.com.cn/idbview/enrichment/ora/"
+    "src": "https://db.chcmu.com.cn/idbview/enrichment/ora/"
   }
 ]

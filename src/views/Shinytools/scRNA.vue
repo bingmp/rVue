@@ -1,6 +1,6 @@
 <template>
   <iframe
-    src="https://hiplotdev.hiplot.com.cn/idbview/other/SeuratV3Wizard/shiny/"
+    src="https://db.chcmu.com.cn/idbview/other/SeuratV3Wizard/shiny/"
     allowfullscreen="true"
     webkitallowfullscreen="true"
     mozallowfullscreen="true"

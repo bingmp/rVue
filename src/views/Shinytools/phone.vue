@@ -1,6 +1,6 @@
 <template>
   <iframe
-    src="https://hiplotdev.hiplot.com.cn/idbview/phone"
+    src="https://db.chcmu.com.cn/idbview/phone"
     allowfullscreen="true"
     webkitallowfullscreen="true"
     mozallowfullscreen="true"

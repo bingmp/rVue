@@ -2,7 +2,7 @@
   <el-tabs v-model="activeName" type="card" @tab-click="handleClick">
     <el-tab-pane label="Data select" name="id1">
       <iframe
-        src="https://hiplotdev.hiplot.com.cn/idbview/machlearn/01_dataset/"
+        src="https://db.chcmu.com.cn/idbview/machlearn/01_dataset/"
         allowfullscreen="true"
         webkitallowfullscreen="true"
         mozallowfullscreen="true"

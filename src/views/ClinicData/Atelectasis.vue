@@ -17,7 +17,7 @@
     </el-tab-pane>
     <el-tab-pane label="Data" name="id2">
       <iframe
-        src="https://hiplotdev.hiplot.com.cn/idbview/dataclinic/Atelectasis/"
+        src="https://db.chcmu.com.cn/idbview/dataclinic/Atelectasis/"
         allowfullscreen="true"
         webkitallowfullscreen="true"
         mozallowfullscreen="true"
@@ -106,10 +106,10 @@ export default {
       chart1.setOption(option1)
 
       const option2 = {
-        // title: {
-        //   text: "Mycoplasma Line with Mutation",
-        //   left: "center",
-        // },
+        title: {
+          text: 'Seasonal Age Distribution',
+          left: 'center',
+        },
         tooltip: {
           trigger: 'axis',
         },
