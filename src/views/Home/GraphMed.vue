@@ -41,7 +41,7 @@
       <span style="width: 50%">
         <br />
         <div style="display: flex">
-          <a href="https://github.com/PengBingming" target="_blank">
+          <a href="https://github.com/bingmp" target="_blank">
             <h4>Github</h4>
           </a>
           &nbsp;| &nbsp;

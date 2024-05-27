@@ -5,7 +5,7 @@ URL: https://idbview.com
 ### Install
 
 ```
-git clone https://github.com/PengBingming/rVue.git # or git clone https://gitee.com/bingmp/rVue.git
+git clone https://github.com/bingmp/rVue.git # or git clone https://gitee.com/bingmp/rVue.git
 cd rVue
 pnpm install
 ```

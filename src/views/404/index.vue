@@ -29,7 +29,7 @@
           All rights reserved
           <a
             style="color: #20a0ff"
-            href="https://github.com/PengBingming"
+            href="https://github.com/bingmp"
             target="_blank"
           >
             GitHub
