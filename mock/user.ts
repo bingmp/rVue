@@ -45,6 +45,17 @@ function createUserList() {
       routes: ['home'],
       token: 'System Token',
     },
+    {
+      userId: 5,
+      avatar: '/images/avatar/lung.gif',
+      username: 'User',
+      password: '123456',
+      desc: 'User',
+      roles: ['Usern'],
+      // buttons: ['cuser.detail'],
+      routes: ['home'],
+      token: 'User Token',
+    },
   ]
 }
 //对外暴露一个数组:数组里面包含两个接口
@@ -65,7 +76,12 @@ export default [
       )
       //没有用户返回失败信息
       if (!checkUser) {
-        return { code: 201, data: { message: '不是有效的账号或密码' } }
+        return {
+          code: 201,
+          data: {
+            message: 'incorrect admin account',
+          },
+        }
       }
       //如果有返回成功信息
       const { token } = checkUser

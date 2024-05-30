@@ -59,9 +59,9 @@ let useUserStore = defineStore('User', {
       this.avatar = ''
       REMOVE_TOKEN()
     },
-    adminLogin() {
-      this.token = 'Admin Token'
-      this.username = 'Admin'
+    noUserLogin() {
+      this.token = 'User Token'
+      this.username = 'User'
       this.avatar = '/images/avatar/lung.gif'
       // REMOVE_TOKEN()
     },

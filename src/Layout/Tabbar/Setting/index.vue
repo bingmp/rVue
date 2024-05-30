@@ -25,7 +25,7 @@
     </span>
     <template #dropdown>
       <el-dropdown-menu>
-        <el-dropdown-item @click="logout">Users</el-dropdown-item>
+        <el-dropdown-item @click="logout">Admin</el-dropdown-item>
         <el-dropdown-item @click="home">Home</el-dropdown-item>
       </el-dropdown-menu>
     </template>

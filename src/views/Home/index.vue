@@ -45,8 +45,11 @@
       </el-card>
       <div><HomeCharts /></div>
     </el-tab-pane>
-    <el-tab-pane label="GEO data" name="id6">
+    <el-tab-pane label="GEO data" name="id2">
       <geoDataTable />
+    </el-tab-pane>
+    <el-tab-pane label="Sample" name="id3">
+      <geoGroupTable />
     </el-tab-pane>
     <el-tab-pane label="Rshiny" name="id4">
       <Rshiny />
@@ -70,14 +73,15 @@ import HomeCharts from './HomeCharts.vue'
 import Rshiny from './GraphMed.vue'
 import LabInfo from './LabInfo.vue'
 import geoDataTable from './geoDataTable.vue'
+import geoGroupTable from './geoGroupTable.vue'
 
 export default {
   components: {
-    // geoDataTable,
     HomeCharts,
     Rshiny,
     LabInfo,
     geoDataTable,
+    geoGroupTable,
   },
   data() {
     return {
