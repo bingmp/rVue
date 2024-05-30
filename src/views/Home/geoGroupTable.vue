@@ -74,7 +74,7 @@ let search = ref('')
 // 搜索表初始化
 let dormitory: any = reactive([])
 
-let dieaseSelect: { text: string; value: string }
+let dieaseSelect: { text: string; value: string }[]
 
 // 搜索选择
 let tableData = computed(() => {

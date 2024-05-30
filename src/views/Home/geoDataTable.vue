@@ -95,13 +95,13 @@ let search = ref('')
 let dormitory: any = reactive([])
 
 // datasets的 type 选择数据
-let typeSelect: { text: string; value: string }
+let typeSelect: { text: string; value: string }[]
 // datasets的 diease 选择数据
-let dieaseSelect: { text: string; value: string }
+let dieaseSelect: { text: string; value: string }[]
 // datasets的 species 选择数据
-let speciesSelect: { text: string; value: string }
+let speciesSelect: { text: string; value: string }[]
 // datasets的 diease 选择数据
-let methodSelect: { text: string; value: string }
+let methodSelect: { text: string; value: string }[]
 
 // 搜索选择
 let tableData = computed(() => {
