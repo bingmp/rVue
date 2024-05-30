@@ -57,7 +57,7 @@ let useStore = useUserStore()
 let $router = useRouter()
 let $route = useRoute()
 
-let loginForm = reactive({ username: 'Admin', password: '123456' })
+let loginForm = reactive({ username: '', password: '' })
 
 let loading = ref(false)
 let loginForms = ref()
@@ -84,6 +84,8 @@ const login = async () => {
   } catch (error) {
     // 登录失败，加载效果消失
     loading.value = false
+    let redirect: any = $route.query.redirect
+    $router.push({ path: redirect || '/' })
     ElNotification({
       type: 'error',
       message: (error as Error).message,
@@ -93,31 +95,34 @@ const login = async () => {
 
 //自定义校验规则函数
 //@ts-ignore
-const validatorUserName = (rule: any, value: any, callback: any) => {
-  //rule:即为校验规则对象
-  //value:即为表单元素文本内容
-  //函数:如果符合条件callBack放行通过即为
-  //如果不符合条件callBack方法,注入错误提示信息
-  if (value === '') {
-    callback(new Error('Please input the password'))
-  }
-  if (value.length >= 5 && value.length <= 10) {
-    callback()
-  } else {
-    callback(new Error('Length should be 5 to 10'))
-  }
-}
+const validatorUserName = {}
+// const validatorUserName = (rule: any, value: any, callback: any) => {
+//   //rule:即为校验规则对象
+//   //value:即为表单元素文本内容
+//   //函数:如果符合条件callBack放行通过即为
+//   //如果不符合条件callBack方法,注入错误提示信息
+//   if (value === '') {
+//     callback(new Error('Please input the password'))
+//   }
+//   if (value.length >= 5 && value.length <= 10) {
+//     callback()
+//   } else {
+//     callback(new Error('Length should be 5 to 10'))
+//   }
+// }
 //@ts-ignore
-const validatorPassword = (rule: any, value: any, callback: any) => {
-  if (value === '') {
-    callback(new Error('Please input the password'))
-  }
-  if (value.length >= 5 && value.length <= 10) {
-    callback()
-  } else {
-    callback(new Error('Length should be 5 to 10'))
-  }
-}
+
+const validatorPassword = {}
+// const validatorPassword = (rule: any, value: any, callback: any) => {
+//   if (value === '') {
+//     callback(new Error('Please input the password'))
+//   }
+//   if (value.length >= 5 && value.length <= 10) {
+//     callback()
+//   } else {
+//     callback(new Error('Length should be 5 to 10'))
+//   }
+// }
 
 const rules = {
   username: [{ trigger: 'blur', validator: validatorUserName }],

@@ -65,7 +65,7 @@ export default [
       )
       //没有用户返回失败信息
       if (!checkUser) {
-        return { code: 201, data: { message: '账号或者密码不正确' } }
+        return { code: 201, data: { message: '不是有效的账号或密码' } }
       }
       //如果有返回成功信息
       const { token } = checkUser

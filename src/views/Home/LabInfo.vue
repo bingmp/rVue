@@ -2,8 +2,10 @@
   <div style="padding: 10px">
     <h1 style="text-align: center">重庆医科大学附属儿童医院呼吸病学研究室</h1>
     <h3 style="text-align: center">
-      Laboratory of Pediatric Respiratory Medicine, Children's Hospital of
-      Chongqing Medical University
+      <a href="https://stu.chcmu.asia" target="_blank">
+        Laboratory of Pediatric Respiratory Medicine, Children's Hospital of
+        Chongqing Medical University
+      </a>
     </h3>
     <p>
       重庆医科大学附属儿童医院呼吸专业成立于80年代初，
