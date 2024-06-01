@@ -30,10 +30,10 @@
   </el-tabs>
 </template>
 <script setup lang="ts">
+import { ref } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import tools from '@/assets/rnaseq/DEseq2.json'
 import useShinyStore from '@/store/modules/shiny'
-import { ref } from 'vue'
 
 let activeName = ref('id1')
 let shinyStore = useShinyStore()
@@ -47,6 +47,11 @@ const showTools = async (src) => {
   await shinyStore.Tools(src)
   //跳转到登录页面
   $router.push({ path: '/shiny/tools', query: { redirect: $route.path } })
+}
+</script>
+<script lang="ts">
+export default {
+  name: 'DEseq2',
 }
 </script>
 <style scoped>

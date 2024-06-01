@@ -60,8 +60,8 @@ let useUserStore = defineStore('User', {
       REMOVE_TOKEN()
     },
     noUserLogin() {
-      this.token = 'User Token'
-      this.username = 'User'
+      this.token = 'visitor Token'
+      this.username = 'visitor'
       this.avatar = '/images/avatar/lung.gif'
       // REMOVE_TOKEN()
     },

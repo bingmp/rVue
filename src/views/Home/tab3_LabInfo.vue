@@ -57,7 +57,11 @@
   </div>
 </template>
 
-<script></script>
+<script lang="ts">
+export default {
+  name: 'Labinfo',
+}
+</script>
 <style>
 h1 {
   font-size: x-large;

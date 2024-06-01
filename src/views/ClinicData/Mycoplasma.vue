@@ -1,22 +1,18 @@
 <template>
   <el-tabs v-model="activeName" type="card" style="padding-right: 5px">
-    <el-tab-pane label="Atelectasis" name="id1">
+    <el-tab-pane label="Mycoplasma" name="id1">
       <div style="display: flex">
-        <!-- 图1 -->
-        <div id="achart1" style="width: 50%; height: 400px"></div>
-        <!-- 图2 -->
-        <div id="achart2" style="width: 50%; height: 400px"></div>
+        <div id="mchart1" style="width: 50%; height: 400px"></div>
+        <div id="mchart2" style="width: 50%; height: 400px"></div>
       </div>
-      <!-- 图3 -->
       <div
-        id="achart3"
-        style="height: 600px; padding-top: 2%; padding-left: 2%"
+        id="mchart3"
+        style="height: 400px; padding-top: 2%; padding-left: 2%"
       ></div>
     </el-tab-pane>
-    <!-- 支原体数据表 -->
     <el-tab-pane label="Data" name="id2">
       <iframe
-        src="https://db.chcmu.com.cn/idbview/dataclinic/Atelectasis/"
+        src="https://db.chcmu.com.cn/idbview/dataclinic/MMP/"
         allowfullscreen="true"
         webkitallowfullscreen="true"
         mozallowfullscreen="true"
@@ -30,18 +26,18 @@
 <script lang="ts" setup>
 import { ref, onMounted } from 'vue'
 import * as echarts from 'echarts'
-import Atelectasis_W_H from '@/assets/data/atelectasis_h_w.json'
-import Atelectasis_Years from '@/assets/data/atelectasis_years.json'
+import Mycoplasma_H_W from '@/assets/data/mycoplasma_h_w.json'
 import Months from '@/assets/data/months.json'
 
 let activeName = ref('id1')
 
 // 图1
 function initChart1() {
-  const chart = echarts.init(document.getElementById('achart1'))
+  const chart = echarts.init(document.getElementById('mchart1'))
+
   const option = {
     title: {
-      text: 'Atelectasis',
+      text: 'Mycoplasma Genetic Resistance Mutation',
       // subtext: "",
       left: 'center',
     },
@@ -58,7 +54,7 @@ function initChart1() {
     legend: {
       left: 'center',
       top: 'bottom',
-      data: ['Male', 'Female', 'Spring', 'Summer', 'Autumn', 'Winter'],
+      data: ['Male', 'Female', 'Positive', 'Negative'],
     },
     series: [
       {
@@ -74,22 +70,20 @@ function initChart1() {
           show: false,
         },
         data: [
-          { value: 4697, name: 'Male' },
-          { value: 3830, name: 'Female' },
+          { value: 176, name: 'Male' },
+          { value: 172, name: 'Female' },
         ],
       },
       {
-        name: 'Season',
+        name: 'Mutation',
         type: 'pie',
         radius: ['50%', '75%'],
         labelLine: {
           length: 30,
         },
         data: [
-          { value: 2038, name: 'Spring' },
-          { value: 2103, name: 'Summer' },
-          { value: 2110, name: 'Autumn' },
-          { value: 2276, name: 'Winter' },
+          { value: 233, name: 'Positive' },
+          { value: 115, name: 'Negative' },
         ],
       },
     ],
@@ -98,12 +92,13 @@ function initChart1() {
 }
 // 图2
 function initChart2() {
-  const chart = echarts.init(document.getElementById('achart2'))
+  const chart = echarts.init(document.getElementById('mchart2'))
+
   const option = {
-    title: {
-      text: 'Seasonal Age Distribution',
-      left: 'center',
-    },
+    // title: {
+    //   text: "Mycoplasma Line with Mutation",
+    //   left: "center",
+    // },
     tooltip: {
       trigger: 'axis',
     },
@@ -116,26 +111,13 @@ function initChart2() {
     legend: {
       left: 'center',
       top: 'bottom',
-      data: [
-        'All',
-        '2012',
-        '2013',
-        '2014',
-        '2015',
-        '2016',
-        '2017',
-        '2018',
-        '2019',
-        '2020',
-        '2021',
-        '2022',
-      ],
+      data: ['All', 'Positive', 'Negative'],
     },
     grid: {
       // top: "15%",
       // left: "1%",
       // right: "1%",
-      bottom: '12%',
+      bottom: '8%',
       containLabel: true,
     },
     xAxis: {
@@ -146,13 +128,33 @@ function initChart2() {
     yAxis: {
       type: 'value',
     },
-    series: Atelectasis_Years,
+    series: [
+      {
+        name: 'Positive',
+        type: 'line',
+        // stack: "Total",
+        data: [25, 41, 11, 11, 4, 7, 34, 50, 18, 14, 8, 10],
+      },
+      {
+        name: 'Negative',
+        type: 'line',
+        // stack: "Total",
+        data: [4, 7, 9, 11, 6, 8, 10, 8, 16, 18, 10, 8],
+      },
+      {
+        name: 'All',
+        type: 'line',
+        // stack: "Total",
+        data: [29, 48, 20, 22, 10, 15, 44, 58, 34, 32, 18, 18],
+      },
+    ],
   }
   chart.setOption(option)
 }
 // 图3
 function initChart3() {
-  const chart = echarts.init(document.getElementById('achart3'))
+  const chart = echarts.init(document.getElementById('mchart3'))
+
   const option = {
     title: {
       text: 'Children Age & Weight',
@@ -195,8 +197,8 @@ function initChart3() {
     ],
     series: [
       {
-        symbolSize: 5,
-        data: Atelectasis_W_H,
+        symbolSize: 10,
+        data: Mycoplasma_H_W,
         type: 'scatter',
       },
     ],
@@ -211,6 +213,6 @@ onMounted(() => {
 </script>
 <script lang="ts">
 export default {
-  name: 'Atelectasis',
+  name: 'Mycoplasma',
 }
 </script>

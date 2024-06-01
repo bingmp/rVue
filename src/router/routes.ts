@@ -62,7 +62,7 @@ export const constantRoute = [
       title: 'Clinic Data',
       hidden: false,
       icon: '',
-      svg: 'database',
+      svg: 'hospital',
     },
     children: [
       {
@@ -74,7 +74,7 @@ export const constantRoute = [
       {
         path: '/clinic/mycoplasma',
         name: 'Mycoplasma',
-        component: () => import('@/views/ClinicData/MycoplasmaChart.vue'),
+        component: () => import('@/views/ClinicData/Mycoplasma.vue'),
         meta: { title: 'Mycoplasma', icon: 'Picture', svg: 'lungs' },
       },
       {
@@ -86,7 +86,7 @@ export const constantRoute = [
       {
         path: '/clinic/who',
         name: 'who',
-        component: () => import('@/views/ClinicData/WHOMortalityDatabase.vue'),
+        component: () => import('@/views/ClinicData/WHOMortality.vue'),
         meta: {
           title: 'WHO Data',
           icon: 'Picture',
@@ -99,9 +99,15 @@ export const constantRoute = [
     path: '/rnaseq',
     name: 'RNAseq',
     component: Layout,
-    redirect: '/rnaseq/machlearn',
-    meta: { title: 'RNAseq', hidden: false, icon: '', svg: 'database' },
+    redirect: '/rnaseq/data',
+    meta: { title: 'RNAseq', hidden: false, icon: '', svg: 'rna' },
     children: [
+      {
+        path: '/rnaseq/data',
+        name: 'data',
+        component: () => import('@/views/RNAseq/Data.vue'),
+        meta: { title: 'Data', icon: 'Picture', svg: 'database' },
+      },
       {
         path: '/rnaseq/machlearn',
         name: 'machlearn',
@@ -112,13 +118,13 @@ export const constantRoute = [
         path: '/rnaseq/limma',
         name: 'limma',
         component: () => import('@/views/RNAseq/Limma.vue'),
-        meta: { title: 'Limma', icon: 'Picture', svg: 'rna' },
+        meta: { title: 'Limma', icon: 'Picture', svg: 'dna' },
       },
       {
         path: '/rnaseq/deseq2',
         name: 'deseq2',
         component: () => import('@/views/RNAseq/DEseq2.vue'),
-        meta: { title: 'DEseq2', icon: 'Picture', svg: 'rna' },
+        meta: { title: 'DEseq2', icon: 'Picture', svg: 'dna' },
       },
     ],
   },
@@ -130,16 +136,16 @@ export const constantRoute = [
     meta: { title: 'GraphMed', icon: 'Platform', svg: 'analysis' },
     children: [
       {
-        path: '/shiny/omics',
-        name: 'omics',
-        component: () => import('@/views/GraphMed/Omics.vue'),
-        meta: { title: 'Omics', icon: 'Picture', svg: 'dna' },
-      },
-      {
         path: '/shiny/clinic',
         name: 'clinic',
         component: () => import('@/views/GraphMed/Clinic.vue'),
         meta: { title: 'Clinic', icon: 'Picture', svg: 'hospital' },
+      },
+      {
+        path: '/shiny/omics',
+        name: 'omics',
+        component: () => import('@/views/GraphMed/Omics.vue'),
+        meta: { title: 'Omics', icon: 'Picture', svg: 'rna' },
       },
       {
         path: '/shiny/labtools',

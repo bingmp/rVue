@@ -1,5 +1,5 @@
 <template>
-  <el-tabs v-model="activeName" type="card" @tab-click="handleClick">
+  <el-tabs v-model="activeName" type="card">
     <el-tab-pane label="Data select" name="id1">
       <iframe
         src="https://db.chcmu.com.cn/idbview/machlearn/01_dataset/"
@@ -10,6 +10,7 @@
         msallowfullscreen="true"
       />
     </el-tab-pane>
+
     <el-tab-pane label="Data analysis" name="id2">
       <div class="volume-wrapper">
         <div
@@ -31,10 +32,10 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import tools from '@/assets/rnaseq/Machlearn.json'
 import useShinyStore from '@/store/modules/shiny'
-import { ref } from 'vue'
 
 let activeName = ref('id1')
 let shinyStore = useShinyStore()
@@ -48,6 +49,11 @@ const showTools = async (src) => {
   await shinyStore.Tools(src)
   //跳转到登录页面
   $router.push({ path: '/shiny/tools', query: { redirect: $route.path } })
+}
+</script>
+<script lang="ts">
+export default {
+  name: 'Machlearn',
 }
 </script>
 <style scoped>

@@ -48,13 +48,13 @@ function createUserList() {
     {
       userId: 5,
       avatar: '/images/avatar/lung.gif',
-      username: 'User',
+      username: 'visitor',
       password: '123456',
-      desc: 'User',
-      roles: ['Usern'],
+      desc: 'visitor',
+      roles: ['visitor'],
       // buttons: ['cuser.detail'],
       routes: ['home'],
-      token: 'User Token',
+      token: 'visitor Token',
     },
   ]
 }
