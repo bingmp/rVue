@@ -95,10 +95,10 @@ function initChart2() {
   const chart = echarts.init(document.getElementById('mchart2'))
 
   const option = {
-    // title: {
-    //   text: "Mycoplasma Line with Mutation",
-    //   left: "center",
-    // },
+    title: {
+      text: 'Mycoplasma Line with Mutation',
+      left: 'center',
+    },
     tooltip: {
       trigger: 'axis',
     },

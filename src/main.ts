@@ -16,6 +16,7 @@ import pinia from './store'
 import 'default-passive-events'
 
 const app = createApp(App)
+
 app.use(ElementPlus)
 // app.use(ElementPlus, {
 //   locale: zhCn, // element-plus 国际化

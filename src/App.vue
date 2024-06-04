@@ -13,6 +13,18 @@ let mysqlDataStore = useMysqlDataStore()
 
 onMounted(() => {
   reqLogin({ username: 'visitor', password: '123456' })
+  // GEO 数据集
+  // mysqlDataStore.getGroupSets()
+  mysqlDataStore.getDataCount()
+
+  // GEO 样本（分组）
+  // mysqlDataStore.getDataSets()
+  mysqlDataStore.getGroupCount()
+
+  // 临床数据
+  mysqlDataStore.getClinicAllGroup()
+  mysqlDataStore.getClinicAllDataset()
+  // 临床 WHO 数据
   mysqlDataStore.getClinicWhoGroup()
 })
 </script>

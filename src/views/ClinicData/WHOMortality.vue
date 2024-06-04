@@ -33,19 +33,20 @@ let activeName = ref('id1')
 function initChart2() {
   // 图例名（年份）
   let whoGroup = mysqlDataStore.clinicWhoGroup
-  let dataDisease = whoGroup.map((item, index) => {
-    return item.name
+  let dataDisease = whoGroup.map((item) => {
+    // whoGroup.map((item, index)
+    return item['name']
   })
 
   // 获取年份
-  let dataYear = Object.keys(toRaw(whoGroup[0].data))
+  let dataYear = Object.keys(toRaw(whoGroup[0]['data']))
 
   // 获取画图数据
-  let chartData = whoGroup.map((item, index) => {
+  let chartData = whoGroup.map((item) => {
     return {
-      ['name']: item.name,
+      ['name']: item['name'],
       ['type']: 'line',
-      ['data']: Object.values(toRaw(item.data)),
+      ['data']: Object.values(toRaw(item['data'])),
     }
   })
 
@@ -92,11 +93,17 @@ function initChart2() {
   chart.setOption(option)
 }
 
-// 图3
+// 初始刷新数据
+// if (mysqlDataStore.clinicWhoGroup.length == 0) {
+//   // setInterval(function () {
+//   console.log('a')
+//   layoutSettingStore.refsh = true
+//   console.log('a')
+//   // }, 1500)
+// }
 
 onMounted(() => {
   initChart2()
-  // mysqlDataStore.getClinicWhoGroup()
 })
 </script>
 <script lang="ts">

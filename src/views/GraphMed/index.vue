@@ -15,6 +15,7 @@
         rather than how (skills learning), helping them process data more easily
         and quickly.
       </p>
+      <br />
       <!-- Hiplot -->
       <p>
         Some of the tools have been uploaded to the
@@ -56,7 +57,8 @@
         <p>
           For RNA-seq and Enrichment, this web may not run successfully due to
           network reasons, please refer to the instructions in Gitee (or Docker)
-          and run it on your local computer.
+          and run it on your local computer. If you have any questions about
+          using it, ask me on GitHub or Gitee!
         </p>
         <br />
         <h4>FAQ</h4>
@@ -75,7 +77,7 @@
             The map does not need to download the reference data, and can
             directly click to modify the sample data after running.
           </li>
-          <li>Other graphics, updating......</li>
+          <li>Updating......</li>
         </ul>
       </span>
     </div>

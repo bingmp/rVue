@@ -1,9 +1,15 @@
 <template>
-  <div>
+  <div style="align-items: center">
     <div
-      id="dataChart"
+      id="geoChart"
       style="width: 100%; height: 400px; padding-right: 10%"
     ></div>
+    <br />
+    <div
+      id="clinicChart"
+      style="width: 100%; height: 400px; padding-right: 10%"
+    ></div>
+    <br />
     <div
       id="toolsChart"
       style="width: 100%; height: 400px; padding-top: 2%; padding-right: 10%"
@@ -11,51 +17,36 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { onMounted } from 'vue'
 import * as echarts from 'echarts'
 
-// 图1
-// // 图例 疾病名
-const diseaseName = [
-  'Atelectasis',
-  'Mycoplasma',
-  'Asthma',
-  'BPD',
-  'RSV',
-  'Atelectasis',
-  'COPD',
-  'Covid-19( GEO )',
-  'Covid-19( million )',
-]
-// 左图 数据集计数
-const dataCount = [
-  { value: 1, name: 'Mycoplasma' },
-  { value: 1, name: 'Atelectasis' },
-  { value: 41, name: 'Asthma' },
-  { value: 9, name: 'BPD' },
-  { value: 4, name: 'RSV' },
-  { value: 1, name: 'COPD' },
-  { value: 3, name: 'Covid-19( GEO )' },
-  { value: 1, name: 'Covid-19( million )' },
-]
-// 右图 样本计数
-const sampleCount = [
-  { value: 348, name: 'Mycoplasma' },
-  { value: 8527, name: 'Atelectasis' },
-  { value: 7257, name: 'Asthma' },
-  { value: 823, name: 'BPD' },
-  { value: 424, name: 'RSV' },
-  { value: 120, name: 'COPD' },
-  { value: 1103, name: 'Covid-19( GEO )' },
-  { value: 123, name: 'Covid-19( million )' },
-]
-// 数据展示图
-function dataChart() {
-  const chart = echarts.init(document.getElementById('dataChart'))
+//获取骨架的小仓库
+import useLayOutSettingStore from '@/store/modules/setting'
+// pinia mysql 数据
+import useMysqlDataStore from '@/store/modules/mysqldata'
+
+let layoutSettingStore = useLayOutSettingStore()
+
+let mysqlDataStore = useMysqlDataStore()
+
+// 一、图1 GEO 数据信息 左图 + 右图
+//  1、左图数据集计数
+let geoDataCount = mysqlDataStore.dataCount
+// 2、右图 样本计数
+const geoSampleCount = mysqlDataStore.groupCount
+
+// 3、中间图例 疾病名
+let geoDataName = geoDataCount.map((res: { [x: string]: any }) => {
+  return res['name']
+})
+
+// 一、geo数据展示图
+function geoChart() {
+  const chart = echarts.init(document.getElementById('geoChart'))
   const option = {
     title: {
-      text: 'Database',
+      text: 'GEO Datasets Information',
       subtext: 'Dataset & Sample',
       left: 'center',
     },
@@ -66,7 +57,7 @@ function dataChart() {
     legend: {
       left: 'center',
       top: 'bottom',
-      data: diseaseName,
+      data: geoDataName,
     },
     toolbox: {
       show: true,
@@ -101,7 +92,7 @@ function dataChart() {
         // labelLine: {
         //   show: true,
         // },
-        data: dataCount,
+        data: geoDataCount,
       },
       {
         name: 'Sample',
@@ -112,14 +103,93 @@ function dataChart() {
         itemStyle: {
           borderRadius: 5,
         },
-        data: sampleCount,
+        data: geoSampleCount,
       },
     ],
   }
   chart.setOption(option)
 }
 
-// 图2
+// 二、图2 临床数据集图
+//  1、左图数据集计数
+let clinicDataCount = mysqlDataStore.clinicAlldataset
+// 2、右图 样本计数
+const clinicSampleCount = mysqlDataStore.clinicAllGroup
+
+// 3、中间图例 疾病名
+let clinicdataName = clinicDataCount.map((res: { [x: string]: any }) => {
+  return res['name']
+})
+// 二、临床数据展示图
+function clinicChart() {
+  const chart = echarts.init(document.getElementById('clinicChart'))
+  const option = {
+    title: {
+      text: 'Clinic Datasets Information',
+      subtext: 'Dataset & Sample',
+      left: 'center',
+    },
+    tooltip: {
+      trigger: 'item',
+      formatter: '{a} <br/>{b} : {c} ({d}%)',
+    },
+    legend: {
+      left: 'center',
+      top: 'bottom',
+      data: clinicdataName,
+    },
+    toolbox: {
+      show: true,
+      feature: {
+        // mark: { show: true },
+        // dataView: { show: true, readOnly: false },
+        // restore: { show: true },
+        saveAsImage: { show: true, pixelRatio: 5 },
+      },
+    },
+    series: [
+      {
+        name: 'Dataset',
+        type: 'pie',
+        radius: [80, 140],
+        center: ['25%', '50%'],
+        avoidLabelOverlap: false,
+        itemStyle: {
+          borderRadius: 5,
+        },
+        label: {
+          show: true,
+          position: 'inner',
+        },
+        emphasis: {
+          label: {
+            show: true,
+            fontSize: 10,
+            fontWeight: 'bold',
+          },
+        },
+        // labelLine: {
+        //   show: true,
+        // },
+        data: clinicDataCount,
+      },
+      {
+        name: 'Sample',
+        type: 'pie',
+        radius: [20, 140],
+        center: ['75%', '50%'],
+        roseType: 'area',
+        itemStyle: {
+          borderRadius: 5,
+        },
+        data: clinicSampleCount,
+      },
+    ],
+  }
+  chart.setOption(option)
+}
+
+// 三、图3 R shiny 数据
 // 图例 工具名
 const toolsName = [
   'Database-link',
@@ -131,12 +201,12 @@ const toolsName = [
   'Omics tools',
   'Clinic tools',
 ]
-// 内圈展示数据
+// R shiny 内圈展示数据
 const toolsAll = [
   { value: 13, name: 'Database-link' },
   { value: 33, name: 'Independent' },
 ]
-// 外圈展示数据
+// R shiny 外圈展示数据
 const toolsDetial = [
   { value: 7, name: 'Machine learning' },
   { value: 6, name: 'Enrichment' },
@@ -146,7 +216,7 @@ const toolsDetial = [
   { value: 12, name: 'Clinic tools' },
 ]
 
-// 工具展示图
+// 三、图3 R shiny 工具图
 function toolsChart() {
   const chart = echarts.init(document.getElementById('toolsChart'))
   const option = {
@@ -200,13 +270,21 @@ function toolsChart() {
   chart.setOption(option)
 }
 
+// 初始刷新数据
+if (mysqlDataStore.clinicWhoGroup.length == 0) {
+  setInterval(function () {
+    layoutSettingStore.refsh = true
+  }, 1500)
+}
+
 onMounted(() => {
-  dataChart()
+  geoChart()
+  clinicChart()
   toolsChart()
 })
 </script>
 
-<script>
+<script lang="ts">
 export default {
   name: 'HomeCharts',
 }

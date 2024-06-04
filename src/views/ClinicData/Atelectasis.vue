@@ -101,7 +101,7 @@ function initChart2() {
   const chart = echarts.init(document.getElementById('achart2'))
   const option = {
     title: {
-      text: 'Seasonal Age Distribution',
+      text: 'Seasonal Distribution',
       left: 'center',
     },
     tooltip: {

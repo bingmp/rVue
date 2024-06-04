@@ -1,5 +1,6 @@
 import Layout from '@/Layout/index.vue'
 export const constantRoute = [
+  // login
   {
     path: '/login',
     name: 'login',
@@ -10,6 +11,7 @@ export const constantRoute = [
       icon: 'Promotion',
     },
   },
+  // Layout home
   {
     path: '/',
     name: 'Layout',
@@ -33,6 +35,7 @@ export const constantRoute = [
       },
     ],
   },
+  // 404
   {
     path: '/404',
     name: '404',
@@ -43,6 +46,7 @@ export const constantRoute = [
       icon: 'Failed',
     },
   },
+  // Any → 404
   {
     path: '/:pathMatch(.*)*',
     name: 'Any',
@@ -53,60 +57,19 @@ export const constantRoute = [
       icon: 'Failed',
     },
   },
-  {
-    path: '/clinic',
-    name: 'Clinic',
-    component: Layout,
-    redirect: '/clinic/atelectasis',
-    meta: {
-      title: 'Clinic Data',
-      hidden: false,
-      icon: '',
-      svg: 'hospital',
-    },
-    children: [
-      {
-        path: '/clinic/atelectasis',
-        name: 'Atelectasis',
-        component: () => import('@/views/ClinicData/Atelectasis.vue'),
-        meta: { title: 'Atelectasis', icon: 'Picture', svg: 'lungs' },
-      },
-      {
-        path: '/clinic/mycoplasma',
-        name: 'Mycoplasma',
-        component: () => import('@/views/ClinicData/Mycoplasma.vue'),
-        meta: { title: 'Mycoplasma', icon: 'Picture', svg: 'lungs' },
-      },
-      {
-        path: '/clinic/covid19',
-        name: 'covid19',
-        component: () => import('@/views/ClinicData/Covid19.vue'),
-        meta: { title: 'Covid-19', icon: 'Picture', svg: 'virus' },
-      },
-      {
-        path: '/clinic/who',
-        name: 'who',
-        component: () => import('@/views/ClinicData/WHOMortality.vue'),
-        meta: {
-          title: 'WHO Data',
-          icon: 'Picture',
-          svg: 'world-health-organization',
-        },
-      },
-    ],
-  },
+  // RNAseq
   {
     path: '/rnaseq',
     name: 'RNAseq',
     component: Layout,
-    redirect: '/rnaseq/data',
+    redirect: '/rnaseq/info',
     meta: { title: 'RNAseq', hidden: false, icon: '', svg: 'rna' },
     children: [
       {
-        path: '/rnaseq/data',
-        name: 'data',
-        component: () => import('@/views/RNAseq/Data.vue'),
-        meta: { title: 'Data', icon: 'Picture', svg: 'database' },
+        path: '/rnaseq/info',
+        name: 'rnaseqinfo',
+        component: () => import('@/views/RNAseq/index.vue'),
+        meta: { title: 'Information', icon: 'Picture', svg: 'setting' },
       },
       {
         path: '/rnaseq/machlearn',
@@ -128,55 +91,102 @@ export const constantRoute = [
       },
     ],
   },
+  // Clinic
   {
-    path: '/shiny',
-    name: 'shiny',
+    path: '/clinic',
+    name: 'Clinic',
     component: Layout,
-    redirect: '/shiny/omics',
+    redirect: '/clinic/info',
+    meta: {
+      title: 'Clinic Data',
+      hidden: false,
+      icon: '',
+      svg: 'hospital',
+    },
+    children: [
+      {
+        path: '/clinic/info',
+        name: 'clinicinfo',
+        component: () => import('@/views/ClinicData/index.vue'),
+        meta: { title: 'Information', icon: 'Picture', svg: 'setting' },
+      },
+      {
+        path: '/clinic/atelectasis',
+        name: 'Atelectasis',
+        component: () => import('@/views/ClinicData/Atelectasis.vue'),
+        meta: { title: 'Atelectasis', icon: 'Picture', svg: 'lungs' },
+      },
+      {
+        path: '/clinic/mycoplasma',
+        name: 'Mycoplasma',
+        component: () => import('@/views/ClinicData/Mycoplasma.vue'),
+        meta: { title: 'Mycoplasma', icon: 'Picture', svg: 'lungs' },
+      },
+      {
+        path: '/clinic/who',
+        name: 'who',
+        component: () => import('@/views/ClinicData/WHOMortality.vue'),
+        meta: {
+          title: 'WHO Data',
+          icon: 'Picture',
+          svg: 'world-health-organization',
+        },
+      },
+      {
+        path: '/clinic/covid19',
+        name: 'covid19',
+        component: () => import('@/views/ClinicData/Covid19.vue'),
+        meta: { title: 'Covid-19', icon: 'Picture', svg: 'virus' },
+      },
+    ],
+  },
+  // shiny
+  {
+    path: '/graphmed',
+    name: 'graphmed',
+    component: Layout,
+    redirect: '/graphmed/omics',
     meta: { title: 'GraphMed', icon: 'Platform', svg: 'analysis' },
     children: [
       {
-        path: '/shiny/clinic',
-        name: 'clinic',
-        component: () => import('@/views/GraphMed/Clinic.vue'),
-        meta: { title: 'Clinic', icon: 'Picture', svg: 'hospital' },
+        path: '/graphmed/info',
+        name: 'graphmedinfo',
+        component: () => import('@/views/GraphMed/index.vue'),
+        meta: { title: 'Information', icon: 'Picture', svg: 'setting' },
       },
       {
-        path: '/shiny/omics',
+        path: '/graphmed/omics',
         name: 'omics',
         component: () => import('@/views/GraphMed/Omics.vue'),
         meta: { title: 'Omics', icon: 'Picture', svg: 'rna' },
       },
       {
-        path: '/shiny/labtools',
+        path: '/graphmed/clinic',
+        name: 'clinic',
+        component: () => import('@/views/GraphMed/Clinic.vue'),
+        meta: { title: 'Clinic', icon: 'Picture', svg: 'hospital' },
+      },
+      {
+        path: '/graphmed/labtools',
         name: 'labtools',
         component: () => import('@/views/GraphMed/Labtools.vue'),
         meta: { title: 'Lab. tools', icon: 'Picture', svg: 'lab' },
       },
       {
-        path: '/shiny/ggplot',
+        path: '/graphmed/ggplot',
         name: 'ggplot',
         component: () => import('@/views/GraphMed/ggplot.vue'),
         meta: { title: 'Basic plot', icon: 'Picture', svg: 'chart' },
       },
       {
-        path: '/shiny/tools',
+        path: '/graphmed/tools',
         name: 'tools',
         component: () => import('@/views/GraphMed/showTools.vue'),
         meta: { title: 'tools', hidden: true, icon: 'Picture' },
       },
     ],
   },
-  // {
-  //   path: '/if',
-  //   name: 'if',
-  //   component: () => import('@/views/GraphMed/iframe.vue'),
-  //   meta: {
-  //     hidden: true,
-  //     title: 'if',
-  //     icon: 'if',
-  //   },
-  // },
+  // scRNA
   {
     path: '/scrna',
     name: 'scrna',
@@ -209,6 +219,7 @@ export const constantRoute = [
       },
     ],
   },
+  // echarts
   {
     path: '/echarts',
     name: 'Echarts',
@@ -235,6 +246,7 @@ export const constantRoute = [
       },
     ],
   },
+  // air
   {
     path: '/air',
     name: 'Air',
@@ -249,30 +261,28 @@ export const constantRoute = [
       },
     ],
   },
+  {
+    path: '/lab',
+    name: 'lab',
+    component: Layout,
+    redirect: '/lab/info',
+    children: [
+      {
+        path: '/lab/info',
+        name: 'LAB',
+        component: () => import('@/views/Lab/index.vue'),
+        meta: { title: 'Lab. Information', icon: 'Picture', svg: 'weather' },
+      },
+    ],
+  },
   // {
-  //   path: '/lab',
-  //   name: 'lab',
-  //   component: Layout,
-  //   redirect: '/lab/phone',
+  //   path: '/if',
+  //   name: 'if',
+  //   component: () => import('@/views/GraphMed/iframe.vue'),
   //   meta: {
-  //     hidden: false,
-  //     title: 'lab',
-  //     icon: 'Picture',
-  //     svg: 'weather',
+  //     hidden: true,
+  //     title: 'if',
+  //     icon: 'if',
   //   },
-  //   children: [
-  //     {
-  //       path: '/lab/phone',
-  //       name: 'phone',
-  //       component: () => import('@/views/Shinytools/phone.vue'),
-  //       meta: { title: 'phone numbers', icon: 'Picture', svg: 'phone' },
-  //     },
-  //     {
-  //       path: '/lab/plot',
-  //       name: 'plot',
-  //       component: () => import('@/views/echarts/plot.vue'),
-  //       meta: { title: 'Plot', icon: 'Picture', svg: 'weather' },
-  //     },
-  //   ],
   // },
 ]

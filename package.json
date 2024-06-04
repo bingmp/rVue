@@ -28,6 +28,7 @@
     "mock.js": "^0.2.0",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.34",
+    "pinia-plugin-persistedstate": "^3.2.1",
     "progress": "^2.0.3",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
