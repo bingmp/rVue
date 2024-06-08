@@ -2,16 +2,16 @@
 
 URL: https://idbview.com  
 Front-end: HTML, CSS, JavaScript, and vue3  
-url: https://github.com/bingmp/rVue or https://gitee.com/bingmp/rVue  
+url: https://github.com/bingmp/rVue or https://gitee.com/bingmp/rVue
 
-Back-end: https://github.com/bingmp/idbview or https://gitee.com/bingmp/idbview  
+Back-end: https://github.com/bingmp/idbview or https://gitee.com/bingmp/idbview
 
 ### 1 Install
 
 ```
-git clone https://github.com/bingmp/rVue.git # or git clone https://gitee.com/bingmp/rVue.git  
-cd rVue  
-pnpm install  
+git clone https://github.com/bingmp/rVue.git # or git clone https://gitee.com/bingmp/rVue.git
+cd rVue
+pnpm install
 ```
 
 ### 2 Start
