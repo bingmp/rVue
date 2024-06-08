@@ -4,7 +4,8 @@ https://idbview.com
 Front-end: HTML, CSS, JavaScript, and vue3  
 url: https://github.com/bingmp/rVue or https://gitee.com/bingmp/rVue
 
-Back-end: https://github.com/bingmp/idbview or https://gitee.com/bingmp/idbview
+Back-end: R shiny  
+url: https://github.com/bingmp/idbview or https://gitee.com/bingmp/idbview
 
 ### 1 Install
 
