@@ -26,8 +26,8 @@ let $route = useRoute()
 
 const showTools = async (src: string) => {
   await shinyStore.Tools(src)
-  //跳转到登录页面
-  $router.push({ path: '/shiny/tools', query: { redirect: $route.path } })
+  //跳转页面
+  $router.push({ path: '/graphmed/tools', query: { redirect: $route.path } })
 }
 </script>
 <style scoped>

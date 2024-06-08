@@ -29,10 +29,10 @@ let $router = useRouter()
 //获取路由对向
 let $route = useRoute()
 
-const showTools = async (src) => {
+const showTools = async (src: string) => {
   await shinyStore.Tools(src)
   //跳转到登录页面
-  $router.push({ path: '/shiny/tools', query: { redirect: $route.path } })
+  $router.push({ path: '/graphmed/tools', query: { redirect: $route.path } })
 }
 </script>
 <style scoped>

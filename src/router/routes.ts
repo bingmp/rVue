@@ -278,7 +278,7 @@ export const constantRoute = [
   // {
   //   path: '/if',
   //   name: 'if',
-  //   component: () => import('@/views/GraphMed/iframe.vue'),
+  //   component: () => import('@/views/GraphMed/if.vue'),
   //   meta: {
   //     hidden: true,
   //     title: 'if',
