@@ -1,6 +1,6 @@
 # idbview
 
-URL: https://idbview.com  
+https://idbview.com  
 Front-end: HTML, CSS, JavaScript, and vue3  
 url: https://github.com/bingmp/rVue or https://gitee.com/bingmp/rVue
 
