@@ -1,0 +1,38 @@
+[
+  {
+    "describe": "Limma: data DEG analysis",
+    "type": "RNAseq",
+    "img": "/images/rnaseq/limma/limma.png",
+    "src": "https://db.chcmu.com.cn/idbview/rnaseq/limma/"
+  },
+  {
+    "describe": "KEGG",
+    "type": "Enrichment",
+    "img": "/images/rnaseq/limma/kegg.png",
+    "src": "https://db.chcmu.com.cn/idbview/enrichment/kegg/"
+  },
+  {
+    "describe": "gseaKEGG",
+    "type": "Enrichment",
+    "img": "/images/rnaseq/limma/gseakegg.png",
+    "src": "https://db.chcmu.com.cn/idbview/enrichment/gseakegg/"
+  },
+  {
+    "describe": "GO",
+    "type": "Enrichment",
+    "img": "/images/rnaseq/limma/go.png",
+    "src": "https://db.chcmu.com.cn/idbview/enrichment/go/"
+  },
+  {
+    "describe": "gseaGO",
+    "type": "Enrichment",
+    "img": "/images/rnaseq/limma/gseago.png",
+    "src": "https://db.chcmu.com.cn/idbview/enrichment/gseago/"
+  },
+  {
+    "describe": "ORA",
+    "type": "Enrichment",
+    "img": "/images/rnaseq/limma/ora.png",
+    "src": "https://db.chcmu.com.cn/idbview/enrichment/ora/"
+  }
+]

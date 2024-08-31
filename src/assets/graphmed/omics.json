@@ -1,0 +1,56 @@
+[
+  {
+    "describe": "Limma",
+    "type": "omics",
+    "img": "/images/graphmed/omics/limma_pca.png",
+    "src": "https://db.chcmu.com.cn/idbview/omics/limma/"
+  },
+  {
+    "describe": "DEseq2",
+    "type": "omics",
+    "img": "/images/graphmed/omics/deseq2_volcano.png",
+    "src": "https://db.chcmu.com.cn/idbview/omics/deseq2/"
+  },
+  {
+    "describe": "Ggene expression",
+    "type": "omics",
+    "img": "/images/graphmed/omics/expr.png",
+    "src": "https://db.chcmu.com.cn/idbview/omics/expr/"
+  },
+  {
+    "describe": "PCA",
+    "type": "omics",
+    "img": "/images/graphmed/omics/pca.png",
+    "src": "https://db.chcmu.com.cn/idbview/omics/pca/"
+  },
+  {
+    "describe": "Heatmap",
+    "type": "omics",
+    "img": "/images/graphmed/omics/heatmap.png",
+    "src": "https://db.chcmu.com.cn/idbview/omics/heatmap/"
+  },
+  {
+    "describe": "volcano",
+    "type": "omics",
+    "img": "/images/graphmed/omics/volcano.png",
+    "src": "https://db.chcmu.com.cn/idbview/omics/volcano/"
+  },
+  {
+    "describe": "Pathway bubble",
+    "type": "omics",
+    "img": "/images/graphmed/omics/pathwaybubble.png",
+    "src": "https://db.chcmu.com.cn/idbview/omics/pathwaybubble/"
+  },
+  {
+    "describe": "GeneName conversion",
+    "type": "omics",
+    "img": "/images/graphmed/omics/geneID.png",
+    "src": "https://db.chcmu.com.cn/idbview/omics/geneID/"
+  },
+  {
+    "describe": "Gene deduplication",
+    "type": "omics",
+    "img": "/images/graphmed/omics/reps.png",
+    "src": "https://db.chcmu.com.cn/idbview/omics/reps/"
+  }
+]

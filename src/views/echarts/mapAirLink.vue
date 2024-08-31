@@ -1,0 +1,10 @@
+<template>
+  <iframe
+    src="https://map.zq12369.com/#/layer=terrain/item=pm2_5/overlay=none/orthographic=106.011200,29.534035,9"
+    allowfullscreen="true"
+    webkitallowfullscreen="true"
+    mozallowfullscreen="true"
+    oallowfullscreen="true"
+    msallowfullscreen="true"
+  />
+</template>

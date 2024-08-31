@@ -1,0 +1,40 @@
+[
+  {
+    "describe": "Early human lung immune cell development and its role in epithelial cell fate",
+    "type": "clinic",
+    "img": "/images/scrna/lca/fetal-lung-immune.png",
+    "src": "https://fetal-lung-immune.cellgeni.sanger.ac.uk/"
+  },
+  {
+    "describe": "A human fetal lung cell atlas uncovers proximal-distal gradients of differentiation and key regulators of epithelial fates",
+    "type": "clinic",
+    "img": "/images/scrna/lca/fetal-lung.png",
+    "src": "https://fetal-lung.cellgeni.sanger.ac.uk/"
+  },
+  {
+    "describe": "scRNA-seq assessment of the human lung, spleen, and esophagus tissue stability after cold preservation",
+    "type": "clinic",
+    "img": "/images/scrna/lca/tissuestability.png",
+    "src": "https://www.tissuestabilitycellatlas.org/"
+  },
+  {
+    "describe": "A cellular census of human lungs identifies novel cell states in health and in asthma",
+    "type": "clinic",
+    "img": "/images/scrna/lca/asthma.png",
+    "src": "https://asthma.cellgeni.sanger.ac.uk/"
+  },
+
+  {
+    "describe": "Organoid modeling of human fetal lung alveolar development reveals mechanisms of cell fate patterning and neonatal respiratory disease",
+    "type": "clinic",
+    "img": "/images/scrna/lca/fetal-organoid.png",
+    "src": "https://fetal-lung-organoid.cellgeni.sanger.ac.uk/"
+  },
+
+  {
+    "describe": "A spatially resolved atlas of the human lung characterizes a gland-associated immune niche",
+    "type": "clinic",
+    "img": "/images/scrna/lca/5locationslung-2.png",
+    "src": "https://5locationslung.cellgeni.sanger.ac.uk/"
+  }
+]

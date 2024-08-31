@@ -1,0 +1,20 @@
+[
+  {
+    "describe": "Elisa analysis",
+    "type": "labtools",
+    "img": "/images/graphmed/lab/elisa.png",
+    "src": "https://db.chcmu.com.cn/idbview/labtools/elisa/"
+  },
+  {
+    "describe": "Q-PCR analysis",
+    "type": "labtools",
+    "img": "/images/graphmed/lab/qpcr.png",
+    "src": "https://db.chcmu.com.cn/idbview/labtools/qpcr/"
+  },
+  {
+    "describe": "Lung function",
+    "type": "labtools",
+    "img": "/images/graphmed/lab/lung.png",
+    "src": "https://db.chcmu.com.cn/idbview/labtools/lung/"
+  }
+]
